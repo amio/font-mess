@@ -33,7 +33,8 @@ const README = fs.readFileSync('service/README.md', 'utf-8')
 const IndexHTML = axios.post('https://md.now.sh/', {
   text: README,
   title: 'font-mess | Obscure text with messed font.',
-  linkCSS: 'https://markdowncss.github.io/splendor/css/splendor.css'
+  linkCSS: 'https://markdowncss.github.io/splendor/css/splendor.css',
+  inlineCSS: 'code { background: #EEE; border-radius: 3px }'
 }).then(res => res.data, e => (console.log(e) || README))
 
 const statics = async (req, res) => {

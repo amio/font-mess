@@ -2,7 +2,10 @@
 
 [![gh-badge][gh-badge]][gh-link] [![npm-version][npm-badge]][npm-link]
 
-Obscure text with messed font. [How does it works][screenshot].
+Obscure text with messed font.
+
+How does it works? Inspect this [obscured text][example],
+it generate a messed font to display messed text normally.
 
 ## Endpoints
 
@@ -16,6 +19,11 @@ Obscure text with messed font. [How does it works][screenshot].
 
 _NOTE: Currently use "DroidSerif-Italic.ttf" by default._
 
+## npm
+
+To use font-mess programmatically, `npm install font-mess`.  
+Check out https://github.com/amio/font-mess.
+
 ## License
 
 MIT @ [Amio][author]
@@ -26,3 +34,4 @@ MIT @ [Amio][author]
 [gh-badge]:   https://img.shields.io/badge/GitHub-amio%2Ffont--mess-blue.svg?style=flat-square
 [gh-link]:    https://github.com/amio/font-mess
 [author]:     https://github.com/amio
+[example]:    https://mess.now.sh/html/Ezekiel%2025:17.%20The%20path%20of%20the%20righteous%20man%20is%20beset%20on%20all%20sides%20by%20the%20inequities%20of%20the%20selfish%20and%20the%20tyranny%20of%20evil%20men.%20Blessed%20is%20he%20who,%20in%20the%20name%20of%20charity%20and%20good%20will,%20shepherds%20the%20weak%20through%20the%20valley%20of%20the%20darkness,%20for%20he%20is%20truly%20his%20brother%E2%80%99s%20keeper%20and%20the%20finder%20of%20lost%20children.
