@@ -1,8 +1,9 @@
 # font-mess [![npm-version][npm-badge]][npm-link]
 
-Generate obscure text with messed font.
+Obscure text with messed font.
 
 > Wow. This looks normal.  
+>
 > -- Friends with Benefits (2011)
 
 How does it works? Inspect this [obscured text][example].
