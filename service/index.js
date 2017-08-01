@@ -12,7 +12,7 @@ const defaultFontBuffer = fs.readFileSync(path.join(__dirname, defaultFont))
 const messer = mess(defaultFontBuffer)
 
 const fontmess = async (req, res) => {
-  const params = req.url.match(/^\/(\w+)\/(.*)$/)
+  const params = req.url.match(/^\/(\w+)\/(.+)$/)
 
   if (params) {
     const [route, text] = params.splice(1)

@@ -4,13 +4,13 @@ Obscure text with messed font. [How does it works](screenshot).
 
 ## Endpoints
 
-(Currently use "DroidSerif-Italic.ttf" by default.)
-
 - GET `/html/<text>` HTML output for messed text.  
   _I.e. [/html/amio.cn@gmail.com](https://mess.now.sh/html/amio.cn@gmail.com)_
 
 - GET `/json/<text>` JSON output for messed text.  
   _I.e. [/json/amio.cn@gmail.com](https://msss.now.sh/json/amio.cn@gmail.com)_
+
+_NOTE: Currently use "DroidSerif-Italic.ttf" by default._
 
 ## License
 
