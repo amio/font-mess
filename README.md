@@ -1,11 +1,11 @@
-# font-mess
+# font-mess [![npm-version][npm-badge]][npm-link]
 
 Generate obscure text with messed font.
 
 > Wow. This looks normal.  
 > -- Friends with Benefits (2011)
 
-How does it works? Inspect these examples.
+How does it works? Inspect this [obscured email address](example).
 
 ## Install
 
@@ -39,4 +39,7 @@ const messed = messer('some text')
 
 MIT @ [Amio](author)
 
-[author]: https://github.com/amio
+[example]:    https://mess.now.sh/html/amio@gmail.com
+[npm-badge]:  https://img.shields.io/npm/v/font-mess.svg?style=flat-square
+[npm-link]:   https://www.npmjs.com/package/font-mess
+[author]:     https://github.com/amio

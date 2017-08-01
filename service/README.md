@@ -1,6 +1,6 @@
 # font-mess [![npm-version][npm-badge]][npm-link]
 
-Obscure text with messed font. [How does it works](screenshot).
+Obscure text with messed font. [How does it works][screenshot].
 
 ## Endpoints
 
