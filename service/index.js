@@ -9,13 +9,14 @@ const genJSON = require('./gen-json.js')
 
 const defaultFont = 'fonts/DroidSerif-Italic.ttf'
 const defaultFontBuffer = fs.readFileSync(path.join(__dirname, defaultFont))
+const messer = mess(defaultFontBuffer)
 
 const fontmess = async (req, res) => {
   const params = req.url.match(/^\/(\w+)\/(.*)$/)
 
   if (params) {
     const [route, text] = params.splice(1)
-    const messed = mess(unescape(text), defaultFontBuffer)
+    const messed = messer(unescape(text))
     switch (route) {
       case 'html':
         res.setHeader('Content-Type', 'text/html; charset=utf-8')

@@ -11,11 +11,11 @@
   "license": "MIT",
   "dependencies": {
     "array-shuffle": "^1.0.1",
-    "axios": "^0.16.2",
     "opentype.js": "^0.7.2",
     "to-arraybuffer": "^1.0.1"
   },
   "devDependencies": {
+    "axios": "^0.16.2",
     "micro": "^7.3.3",
     "snarkdown": "^1.2.2",
     "url-pattern": "^1.0.3"

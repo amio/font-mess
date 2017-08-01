@@ -4,6 +4,8 @@ Obscure text with messed font. [How does it works](screenshot).
 
 ## Endpoints
 
+(Currently use "DroidSerif-Italic.ttf" by default.)
+
 - GET `/html/<text>` HTML output for messed text.  
   _I.e. [/html/amio.cn@gmail.com](https://mess.now.sh/html/amio.cn@gmail.com)_
 
