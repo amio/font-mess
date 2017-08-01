@@ -21,6 +21,6 @@ module.exports = function genHTML (messed) {
 
   return `
     <style>${css}</style>
-    <div class="mess-font ${fontName}">${messedText}</div>
+    <div class="font-mess ${fontName}">${messedText}</div>
   `
 }
