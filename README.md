@@ -6,7 +6,8 @@ Obscure text with messed font.
 >
 > -- Friends with Benefits (2011)
 
-How does it works? Inspect this [obscured text][example].
+How does it works? Inspect this [obscured text][example],
+it generate a messed font to display messed text normally.
 
 ## Install
 

@@ -3,12 +3,13 @@
   "version": "1.0.0-alpha.1",
   "description": "Obscure text with messed font.",
   "repository": "amio/font-mess",
-  "main": "lib/mess.js",
-  "scripts": {
-    "start": "node service/index.js"
-  },
   "author": "Amio <amio.cn@gmail.com>",
   "license": "MIT",
+  "main": "lib/mess.js",
+  "scripts": {
+    "deploy": "now rm --safe -y font-mess && now --public",
+    "start": "node service/index.js"
+  },
   "dependencies": {
     "array-shuffle": "^1.0.1",
     "opentype.js": "^0.7.2",
@@ -21,6 +22,7 @@
     "url-pattern": "^1.0.3"
   },
   "files": [
-    "lib"
+    "lib",
+    "README.md"
   ]
 }
