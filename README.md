@@ -12,7 +12,7 @@ npm install font-mess
 
 ## Usage
 
-### Programatic
+### Programmatic
 
 ```javascript
 const fs = require('fs')
