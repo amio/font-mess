@@ -48,4 +48,8 @@ const statics = async (req, res) => {
 }
 
 module.exports = fontmess
-require('micro')(fontmess).listen(3000)
+
+if (!module.parent) {
+  require('micro')(fontmess).listen(3000)
+}
+

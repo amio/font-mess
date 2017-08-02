@@ -8,6 +8,7 @@
   "main": "lib/mess.js",
   "scripts": {
     "deploy": "now rm --safe -y font-mess && now --public",
+    "dev": "micro-dev service/index.js",
     "start": "node service/index.js"
   },
   "dependencies": {
@@ -17,7 +18,7 @@
   },
   "devDependencies": {
     "axios": "^0.16.2",
-    "micro": "^7.3.3",
+    "micro": "^8.0.1",
     "snarkdown": "^1.2.2",
     "url-pattern": "^1.0.3"
   },
