@@ -1,5 +1,7 @@
 {
+  "version": 2,
   "files": [
+    "endpoints",
     "service",
     "lib"
   ],
@@ -7,5 +9,11 @@
     "font",
     "mess",
     "font-mess"
+  ],
+  "builds": [
+    { "src": "service/index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/.*", "dest": "/service/index.js" }
   ]
 }

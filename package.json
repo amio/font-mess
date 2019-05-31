@@ -7,9 +7,9 @@
   "license": "MIT",
   "main": "lib/mess.js",
   "scripts": {
-    "deploy": "now rm --safe -y font-mess && now --public",
     "dev": "micro-dev service/index.js",
-    "start": "node service/index.js"
+    "start": "micro service/index.js",
+    "deploy": "now rm --safe -y font-mess && now --public"
   },
   "dependencies": {
     "array-shuffle": "^1.0.1",
