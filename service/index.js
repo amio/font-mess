@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios')
+const serveMarked = require('serve-marked')
 const { unescape } = require('querystring')
 
 const mess = require('../lib/mess.js')
@@ -11,13 +11,21 @@ const defaultFont = 'fonts/DroidSerif-Italic.ttf'
 const defaultFontBuffer = fs.readFileSync(path.join(__dirname, defaultFont))
 const messer = mess(defaultFontBuffer)
 
-const serve = async (req, res) => {
-  if (req.url === '/favicon.ico') {
-    return res.end()
-  }
+const serveReadme = serveMarked(path.resolve(__dirname, 'README.md'), {
+  title: 'font-mess',
+  inlineCSS: `
+    .markdown-body h1 + p {
+      text-align: center;
+      margin: -40px 0 4rem 0;
+      line-height: 20px;
+      height: 20px;
+    }
+  `
+})
 
+const serve = async (req, res) => {
   if (req.url === '/') {
-    return res.end(await IndexHTML)
+    return serveReadme(req, res)
   }
 
   const params = req.url.match(/^\/(\w+)\/(.+)$/)
@@ -37,13 +45,5 @@ const serve = async (req, res) => {
   res.statusCode = 404
   res.end()
 }
-
-const README = fs.readFileSync(path.join(__dirname, 'README.md'), 'utf-8')
-const IndexHTML = axios.post('https://md.now.sh/', {
-  text: README,
-  title: 'font-mess | Obscure text with messed font.',
-  linkCSS: 'https://markdowncss.github.io/splendor/css/splendor.css',
-  inlineCSS: 'code { background: #EEE; border-radius: 3px }'
-}).then(res => res.data, e => (console.log(e) || README))
 
 module.exports = serve

@@ -19,6 +19,7 @@
   "devDependencies": {
     "axios": "^0.19",
     "micro": "^9.3",
+    "serve-marked": "^1.1.0",
     "snarkdown": "^1.2.2",
     "url-pattern": "^1.0.3"
   },
