@@ -33,12 +33,14 @@ const serve = async (req, res) => {
   if (params) {
     const [route, text] = params.splice(1)
     const messed = messer(unescape(text))
+
     switch (route) {
       case 'html':
         res.setHeader('Content-Type', 'text/html; charset=utf-8')
         return res.end(genHTML(messed))
       case 'json':
-        return res.end(genJSON(messed))
+        res.setHeader('Content-Type', 'application/json')
+        return res.end(JSON.stringify(genJSON(messed)))
     }
   }
 
